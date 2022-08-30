@@ -117,7 +117,7 @@ transition: all 0.3s ease;
 display: inline-block;
 }
 .discover__button:hover, .header__button:hover, .destenation__button:hover{
-    box-shadow:  0 5px 15px 1px #EE6C4D;
+   box-shadow:  0 5px 15px 1px #ee6d4d86;
 }
 .header__button:active,.discover__button:active,.destenation__button:active{
     transform: translateY(5px);
@@ -397,11 +397,8 @@ flex-direction: column;
 }
 .card-review__title {
 font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-margin-bottom: 4px;
-align-self: flex-start;
-
+font-size: 18px;
+line-height: 27px;
 }
 .card-review__rate {
 margin-bottom: 8px;
@@ -414,9 +411,11 @@ margin-bottom: 14px;
 flex: 1 1 auto;
 }
 .card-review__name {
-font-weight: 700;
-font-size: 18px;
-line-height: 27px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 4px;
+    align-self: flex-start;
 }
 @media (max-width:999.98px) {
     .about{
@@ -432,6 +431,10 @@ line-height: 27px;
     .destenation::after{
         display: none;
     }
+    .destenation__title {
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 34px;}
     .about__content {
         flex-direction: column;
         align-items: center;
@@ -443,9 +446,17 @@ line-height: 27px;
         margin-bottom: 20px;
         
     }
-    
+    .about__paragraph, .about__black, .about__orange{
+        font-size: 20px;
+        line-height: 30px;
+    }
     .about__title{
-        margin-bottom: 30px;
+        margin-bottom: 34px;
+        font-size: 30px;
+        line-height: 44px;
+    }
+    .about__paragraph:not(:last-child){
+        margin-bottom: 20px;
     }
     .review__content{
         flex-direction: column;
@@ -457,7 +468,22 @@ line-height: 27px;
     .review{
         padding-bottom: 40px;
     }
-    
+    .review__title {
+       
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: 34px;
+        
+    }
+ .card__name {
+        font-size: 20px;
+        line-height: 30px;
+        }
+.card__text {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 4px;
+        }
 }
 .subscribe {
     padding: 0px 15px 200px;
@@ -493,7 +519,7 @@ margin-bottom: 54px;
     background-color: #FFFFFF;
     display: flex;
     border-radius: 26px;
-    padding: 3px 4px 3px 20px ;
+    padding: 3px 4px;
     
     align-items: center;
 }
@@ -663,9 +689,7 @@ margin-bottom: 19px;
     .form__email{
         margin: 0px 0px 10px 0px;
     }
-    .form__email::placeholder{
-        text-align: center;
-    }
+   
     .form__button{
         align-self: center;
     }
